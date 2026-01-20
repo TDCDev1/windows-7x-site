@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop - Windows 7X</title>
+    <link rel="icon" type="image/png" href="qnd0yxjw71k71.png">
+    <style>
+        /* Genel Stil (Index ile uyumlu) */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #262626; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background: #fff; border-bottom: 1px solid #ddd; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: bold; text-decoration: none; color: #000; }
+        .nav-logo img { height: 30px; }
+
+        /* Workshop Header */
+        .ws-header {
+            background: #2b2b2b;
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ws-title h1 { margin: 0; font-size: 32px; }
+        .ws-title p { margin: 5px 0 0; color: #aaa; }
+        
+        /* Mod Yükle Butonu */
+        .btn-upload {
+            background: #0067b8;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.3s;
+        }
+        .btn-upload:hover { background: #005da6; }
+
+        /* Mod Listesi Grid */
+        .mod-grid {
+            display: grid;
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop - Windows 7X</title>
+    <link rel="icon" type="image/png" href="qnd0yxjw71k71.png">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background: #fff; border-bottom: 1px solid #ddd; }
+        .mod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px 5%; }
+        
+        /* Mod Kartı Tasarımı */
+        .mod-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: 0.3s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+        .mod-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .mod-thumb { height: 160px; background: #ddd; object-fit: cover; width: 100%; }
+        .mod-info { padding: 15px; }
+        
+        /* Etiketler */
+        .badge { font-size: 11px; padding: 3px 8px; border-radius: 12px; margin-right: 5px; font-weight: bold; }
+        .bg-blue { background: #e3f2fd; color: #0d47a1; } /* Sistem */
+        .bg-purple { background: #f3e5f5; color: #4a148c; } /* Görünüm */
+        
+        /* Kategori Barı */
+        .category-bar { padding: 15px 5%; background: white; border-bottom: 1px solid #eee; display: flex; gap: 15px; overflow-x: auto; }
+        .cat-link { text-decoration: none; color: #555; font-weight: 500; padding: 5px 10px; border-radius: 20px; }
+        .cat-link:hover, .cat-link.active { background: #0067b8; color: white; }
+
+        .btn-upload { background: #0067b8; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; display: none; /* Varsayılan Gizli */ }
+    </style>
+</head>
+<body>
+
+<nav>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop - Windows 7X</title>
+    <link rel="icon" type="image/png" href="qnd0yxjw71k71.png">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #2b2b2b; color: #ddd; margin: 0; }
+        nav { background: #1a1a1a; padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #444; }
+        
+        /* Sorting Bar (Nexus Mods Style) */
+        .sort-bar { background: #333; padding: 15px 5%; display: flex; gap: 20px; border-bottom: 1px solid #444; }
+        .sort-item { color: #aaa; text-decoration: none; font-size: 14px; font-weight: bold; cursor: pointer; }
+        .sort-item.active { color: #ffa500; border-bottom: 2px solid #ffa500; padding-bottom: 5px; }
+
+        /* Grid */
+        .mod-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 30px 5%; }
+        .mod-card { background: #1a1a1a; border: 1px solid #444; text-decoration: none; color: inherit; display: block; transition: 0.2s; }
+        .mod-card:hover { border-color: #ffa500; transform: translateY(-3px); }
+        .mod-thumb { height: 150px; background-size: cover; background-position: center; }
+        .mod-info { padding: 15px; }
+        .mod-title { margin: 0 0 10px 0; color: #fff; font-size: 16px; }
+        .mod-meta { font-size: 12px; color: #888; display: flex; justify-content: space-between; margin-bottom: 10px; }
+        .tag { background: #333; padding: 2px 6px; font-size: 11px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" style="color:white; text-decoration:none; font-weight:bold;">Windows 7X</a>
+    <div id="nav-auth"></div>
+</nav>
+
+<div class="sort-bar">
+    <span class="sort-item active">POPÜLER (30 GÜN)</span>
+    <span class="sort-item">YENİ</span>
+    <span class="sort-item">EN ÇOK İNDİRİLEN</span>
+    <span class="sort-item">GÜNCELLENEN</span>
+    <div style="margin-left:auto;">
+        <a href="upload.html" style="background:#ffa500; color:black; padding:5px 15px; text-decoration:none; font-weight:bold; font-size:12px;">MOD YÜKLE</a>
+    </div>
+</div>
+
+<div class="mod-grid" id="mod-grid-container">
+    </div>
+
+<script src="mockData.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

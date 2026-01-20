@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hesap Ayarları - Windows 7X</title>
+    <link rel="icon" type="image/png" href="qnd0yxjw71k71.png">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; }
+        
+        /* Navigasyon */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; background: #fff; border-bottom: 1px solid #ddd; }
+        .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: bold; text-decoration: none; color: #000; }
+        .nav-logo img { height: 30px; }
+
+        /* Dinamik Konteyner */
+        .container { max-width: 1000px; margin: 40px auto; display: flex; gap: 20px; }
+        
+        /* Sol Menü */
+        .sidebar { width: 250px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: fit-content; }
+        .sidebar button { display: block; width: 100%; padding: 12px; text-align: left; background: none; border: none; cursor: pointer; border-radius: 4px; font-size: 14px; margin-bottom: 5px; color: #333; }
+        .sidebar button:hover { background: #f0f2f5; }
+        .sidebar button.active { background: #e8f0fe; color: #0067b8; font-weight: bold; }
+
+        /* Sağ İçerik Alanı */
+        .content-area { flex: 1; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        
+        /* Form Elemanları */
+        h2 { margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 15px; }
+        label { display: block; margin: 15px 0 5px; font-weight: 600; font-size: 13px; color: #555; }
+        input[type="text"], input[type="password"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        
+        /* Butonlar */
+        .btn-save { background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin-top: 20px; }
+        .btn-danger { background: #dc3545; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin-top: 20px; }
+
+        /* ISO Yükleme Alanı (Admin Özel) */
+        .upload-zone { border: 2px dashed #0067b8; padding: 30px; text-align: center; background: #f8fbff; border-radius: 8px; margin-top: 20px; }
+        .file-info { margin-top: 15px; display: none; background: #e9ecef; padding: 10px; border-radius: 4px; }
+        .progress-bar { width: 100%; height: 10px; background: #ddd; border-radius: 5px; margin-top: 10px; overflow: hidden; display: none; }
+        .progress-fill { height: 100%; background: #0067b8; width: 0%; transition: width 0.2s; }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo"><img src="qnd0yxjw71k71.png"> Windows 7X</a>
+    <div id="nav-auth"></div> </nav>
+
+<div class="container" id="account-wrapper">
+    <p style="text-align:center; width:100%;">Yükleniyor...</p>
+</div>
+
+<script src="main.js"></script>
+<script>
+    // Sayfa açılınca hesap panelini oluştur
+    document.addEventListener("DOMContentLoaded", () => {
+        renderAccountPage(); 
+    });
+</script>
+
+</body>
+</html>
